@@ -2,14 +2,16 @@ import DivAnimada from "../components/div";
 import IframeAnimado from "../components/iframe";
 import ImagemAnimada from "../components/imagem";
 import VideoAutoPlay from "../components/video";
-import ENCOMENDA from "./encomenda.jsx";
+import Encomenda from "./encomenda";
 import { memo } from "react";
 function Home(){
     const mensagem = "Olá, pretendo alugar o vosso serviço para um evento!"
 const url = `https://wa.me/351936667540?text=${encodeURIComponent(mensagem)}`
  return(
     <>
-    <Route path="/encomenda" element = {<ENCOMENDA/>}/> 
+   
+
+<Route path="/encomenda" element={<Encomenda />} />
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To MY RESTAURANT!</div>
