@@ -17,7 +17,7 @@ const url = `https://wa.me/351936667540?text=${encodeURIComponent(mensagem)}`
             </div>
             
             <div className="btnClick">
-                <a class="btn btn-primary btn-xl text-uppercase" href="./encomenda.jsx">Place Your Order Now</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="/encomenda.jsx">Place Your Order Now</a>
                 
                 <a class="btn btn-primary btn-xl text-uppercase" target="_blank"  href={url}>Book Us for Your Event</a>
                 
