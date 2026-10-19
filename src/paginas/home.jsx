@@ -2,13 +2,14 @@ import DivAnimada from "../components/div";
 import IframeAnimado from "../components/iframe";
 import ImagemAnimada from "../components/imagem";
 import VideoAutoPlay from "../components/video";
+import ENCOMENDA from "./encomenda.jsx";
 import { memo } from "react";
 function Home(){
     const mensagem = "Olá, pretendo alugar o vosso serviço para um evento!"
 const url = `https://wa.me/351936667540?text=${encodeURIComponent(mensagem)}`
  return(
     <>
-    
+    <Route path="/encomenda" element = {<ENCOMENDA/>}/> 
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To MY RESTAURANT!</div>
@@ -17,7 +18,8 @@ const url = `https://wa.me/351936667540?text=${encodeURIComponent(mensagem)}`
             </div>
             
             <div className="btnClick">
-                <a class="btn btn-primary btn-xl text-uppercase" href="/encomenda.jsx">Place Your Order Now</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="/encomenda">Place Your Order Now</a>
+                
                 
                 <a class="btn btn-primary btn-xl text-uppercase" target="_blank"  href={url}>Book Us for Your Event</a>
                 
