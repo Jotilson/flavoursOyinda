@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./CarrosselPratos.css";
+import "./carrosselPratos.css";
 
 const pratos = [
   "/prato1.jpg",
