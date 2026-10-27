@@ -3,14 +3,19 @@ import IframeAnimado from "../components/iframe";
 import ImagemAnimada from "../components/imagem";
 import ImagemA from "../components/img";
 import VideoAutoPlay from "../components/video";
+<<<<<<< HEAD
 import CarrosselPratos from "../components/carrosselPratos.jsx"
+=======
+
+>>>>>>> 6bb18719b0ad1191eb166922bd401c2acdb6277b
 import { memo } from "react";
 function Home(){
     const mensagem = "Olá, pretendo alugar o vosso serviço para um evento!"
 const url = `https://wa.me/351936667540?text=${encodeURIComponent(mensagem)}`
  return(
     <>
-    
+   
+
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To <br /> MY RESTAURANT!</div>
@@ -21,7 +26,8 @@ const url = `https://wa.me/351936667540?text=${encodeURIComponent(mensagem)}`
             <ImagemA src={'/pratoIMG.png'}/>
                
             <div className="btnClick">
-                <a class="btn btn-primary btn-xl text-uppercase" href="./encomenda">Place Your Order Now</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="/encomenda">Place Your Order Now</a>
+                
                 
                 <a class="btn btn-primary btn-xl text-uppercase" target="_blank"  href={url}>Book Us for Your Event</a>
                 
