@@ -3,11 +3,9 @@ import IframeAnimado from "../components/iframe";
 import ImagemAnimada from "../components/imagem";
 import ImagemA from "../components/img";
 import VideoAutoPlay from "../components/video";
-<<<<<<< HEAD
-import CarrosselPratos from "../components/carrosselPratos.jsx"
-=======
 
->>>>>>> 6bb18719b0ad1191eb166922bd401c2acdb6277b
+import CarrosselPratos from "../components/carrosselPratos.jsx"
+
 import { memo } from "react";
 function Home(){
     const mensagem = "Olá, pretendo alugar o vosso serviço para um evento!"
