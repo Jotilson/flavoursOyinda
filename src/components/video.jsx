@@ -42,7 +42,7 @@ function VideoAutoPlay() {
       playsInline    // Importante no telemóvel
       loop           // Se quiseres que repita
           // Podes tirar se não quiseres os controlos
-      style={{ width: "60%", maxWidth: "600px", borderRadius:"5px", boxShadow:"1px 1px 2px black" }}
+      style={{  width: "50%", maxWidth: "600px", borderRadius:"5px", boxShadow:"1px 1px 2px black" }}
     />
   );
 }

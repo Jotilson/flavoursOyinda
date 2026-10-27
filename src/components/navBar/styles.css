@@ -10871,7 +10871,8 @@ p {
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
+    padding: 5rem 0;
+
   }
 }
 .btn-xl {
@@ -10967,12 +10968,16 @@ width: auto;
 .logoTXT{
   font-family: 'Dantene';
 }
+
+.contadorPratos{
+  font-family: 'Dantene';
+}
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 5.5rem;
   padding-bottom: 17rem;
   text-align: center;
   color: #fff;
-  background-image: url("/imageCapa.jpg");
+  background-image: url("/imgCapa.jfif");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10980,8 +10985,8 @@ header.masthead {
 
 }
 header.masthead2 {
-  padding-top: 10.5rem;
-  padding-bottom: 17rem;
+  padding-top: 15.5rem;
+  padding-bottom: 10rem;
   height: 50vh;
   text-align: center;
   color: #fff;
@@ -11007,11 +11012,17 @@ header.masthead .masthead-heading {
   font-family: "hug";
 }
 
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-template-rows: repeat(2,100px);
+      justify-content: center;
+      align-content:center;
+      align-items:center;
     
   }
   header.masthead .masthead-subheading {
@@ -11352,9 +11363,24 @@ background-color: #F8E9C8;
 .txtEsp{
   font-family: Arial, Helvetica, sans-serif;
 }
+.imgA{
+ width:50%;
+ margin-bottom:70px;
+ margin-top:70px;
+  @media (max-width:768px) {
+   width: 50%;
+  }
+}
+.btnClick {
+  margin-top:300px;
+  @media (max-width:768px) {
+   margin-top:0px
+  }
+}
 .btnClick a{
   margin: 5%;
   box-shadow: 2px 2px 4px yellow;
+
 }
 
  .imagem-animada {

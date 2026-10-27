@@ -1,0 +1,76 @@
+
+.carrosselPratos {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  
+}
+
+
+.imagemCarrossel {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.setaPrato {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 20px;
+
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.setaPrato:hover {
+  background: #c69c35;
+}
+
+.setaPrato.esquerda {
+  left: 12px;
+}
+
+.setaPrato.direita {
+  right: 12px;
+}
+
+.contadorPratos {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0;
+  padding: 5px 12px;
+  border-radius: 20px;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 14px;
+  
+}
+
+@media (max-width: 600px) {
+  .imagemCarrossel {
+    height: 300px;
+  }
+
+  .setaPrato {
+    width: 38px;
+    height: 38px;
+  }
+}

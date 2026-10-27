@@ -3,7 +3,7 @@ import '../components/navBar/styles.css'
 import ImagemAnimada from "../components/imagem";
 import VideoAutoplays from '../components/videos'
 import DivAnimada from '../components/div'
-
+import IMGeventos from '../components/imgEventos.jsx'
 
 function Eventos(){
   
@@ -20,13 +20,13 @@ const pararVideo = (e) => {
    <>
   
    <header className="masthead2">
-
+   
    </header>
    
    <section className="apresentacao">
-    
+      <br />
         <h1>Events</h1>
-        <br />
+        <br />   <br />
        <div>
         
 <p>Moments that stay in our memories… and on our taste buds.</p>
@@ -39,6 +39,7 @@ const pararVideo = (e) => {
    </section>
     
 <section>
+    <br />
   <h1>Memories Videos 🎬</h1>
   <DivAnimada>
   <div className="divVideos">
@@ -134,11 +135,17 @@ const pararVideo = (e) => {
   </div>
 
   </DivAnimada>
-  
+    <br />
    </section> 
     
-       <ImagemAnimada src={"/eventos06.jpg"}/>
-       <ImagemAnimada src={"/eventos07.jpg"}/>
+    <section>
+      <h2>Memories photos</h2>
+     <DivAnimada>
+      <IMGeventos/>
+
+      </DivAnimada>
+        <br />
+      </section>
    
    
    
